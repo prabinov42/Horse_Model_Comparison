@@ -32,5 +32,3 @@ dfr <- df %>%
 df <- dfr %>%
   left_join(df, by = c("date"="date", "racenum"="racenum")) %>%
   select(-n,-mn)
-
-rm(dfr, dts)
