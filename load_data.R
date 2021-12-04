@@ -1,4 +1,5 @@
 library(tidyverse)
+library(janitor)
 
 df <- read_csv("https://raw.githubusercontent.com/prabinov42/MiscData/master/horse_racing_data.csv") %>%
   clean_names() %>%
